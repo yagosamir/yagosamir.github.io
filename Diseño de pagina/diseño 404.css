@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+:root {
+    --bg-dark: #0a0a0a; --text-white: #fff; --text-gray: #a0a0a0;
+    --accent-blue: #1c3285; --wire-color: #1a1a1a; --prong-metal: #505050;
+}
+* { box-sizing: border-box; }
+body {
+    margin: 0; padding: 0; background: var(--bg-dark); font-family: 'Inter', sans-serif;
+    min-height: 100vh; width: 100vw; display: flex; flex-direction: column;
+    justify-content: center; align-items: center; color: var(--text-white);
+    overflow-x: hidden; /* Cambiado: permite scroll vertical normal */
+}
+.animation-container {
+    width: 100%; height: 180px; display: flex; justify-content: center;
+    align-items: flex-end; overflow: hidden; margin-bottom: -2px;
+}
+.error-code {
+    font-size: clamp(100px, 15vw, 160px); font-weight: 900; margin: 0;
+    color: var(--text-white); letter-spacing: -5px;
+    animation: slideUpDown 6s ease-in-out infinite;
+    text-shadow: 0 0 20px rgba(255,255,255,.1);
+}
+.wire-wrapper {
+    display: flex; align-items: center; width: 90%; max-width: 850px;
+}
+.wire-section {
+    height: 10px; background: var(--wire-color); border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,.5);
+}
+.left-wire { flex: 1; } .right-wire { width: 100px; }
+.wire-cut { width: 40px; height: 40px; margin: 0 15px; filter: drop-shadow(0 0 8px var(--accent-blue)); }
+.plug-male { display: flex; align-items: center; }
+.plug-body {
+    width: 45px; height: 55px; background: var(--wire-color);
+    border-radius: 8px 15px 15px 8px; display: flex; align-items: center;
+    justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,.5);
+}
+.plug-texture {
+    width: 6px; height: 30px; background: rgba(255,255,255,.03); border-radius: 3px;
+}
+.prongs-container { display: flex; flex-direction: column; gap: 12px; margin-left: -2px; }
+.prong {
+    width: 22px; height: 8px; background: var(--prong-metal);
+    border-radius: 0 2px 2px 0; display: flex; align-items: center;
+    justify-content: flex-end; padding-right: 4px;
+}
+.prong-hole { width: 4px; height: 4px; background: var(--bg-dark); border-radius: 50%; }
+.text-content {
+    text-align: center; margin-top: 50px; padding: 0 20px;
+}
+h2 { font-weight: 700; font-size: 24px; letter-spacing: 1px; margin-bottom: 10px; }
+p {
+    max-width: 450px; color: var(--text-gray); font-size: 15px;
+    line-height: 1.6; margin: 0 auto 35px;
+}
+.btn-home {
+    display: inline-block; border: 1px solid var(--accent-blue);
+    background: transparent; color: var(--text-white); padding: 14px 32px;
+    border-radius: 4px; text-decoration: none; font-weight: 600;
+    font-size: 13px; transition: .3s ease;
+}
+.btn-home:hover { background: var(--accent-blue); box-shadow: 0 0 15px rgba(28,50,133,.4); }
+@keyframes slideUpDown {
+    0%, 25% { transform: translateY(105%); }
+    60%, 75% { transform: translateY(0); }
+    100% { transform: translateY(105%); }
+}
+@media (max-width: 768px) {
+    .animation-container { height: 110px; }
+    .error-code { font-size: 90px; }
+    .text-content { margin-top: 25px; }
+    p { font-size: 13px; margin-bottom: 25px; line-height: 1.4; }
+    .wire-section { height: 8px; } .wire-cut { width: 30px; height: 30px; }
+    .plug-body { width: 35px; height: 45px; }
+    .prongs-container { gap: 8px; } .prong { height: 6px; width: 18px; }
+    .btn-home { padding: 12px 25px; }
+}

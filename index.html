@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="utf-8" />
+    <title>Yago Roberti</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="Diseño de pagina/diseño index.css" rel="stylesheet" type="text/css" />
+    <link href="Imagenes/Logos Personales/Upsilon-32x32.png" rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+<!---------------------------------------------------------------------------
+  BARRA DE NAVEGACIÓN PRINCIPAL
+---------------------------------------------------------------------------->
+<nav class="navegacion" aria-label="Navegación principal">
+    <div class="contenedor nav-contenedor">
+        <a href="index.html" class="nav-brand">
+            <img src="Imagenes/Logos Personales/Upsilon Original.svg" width="40" height="40" alt="Logo Yago Roberti" loading="eager" />
+            <div class="logo-texto">YAGO<br />ROBERTI</div>
+        </a>
+        
+        <div class="menu-hamburguesa" id="menu-toggle" aria-label="Abrir menú de navegación">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="nav-menu" id="nav-menu" role="navigation" aria-label="Menú principal">
+            <a href="portafolio.html" class="nav-link">Portafolio</a>
+            <a href="sobre mi.html" class="nav-link">Sobre Mí</a>
+            <a href="contacto.html" class="boton-contacto-destacado">Contáctame</a>
+
+            <div class="menu-socials" aria-label="Redes sociales">
+                <a href="https://x.com/FosterCarton692" aria-label="Perfil en X (Twitter)" target="_blank" rel="noopener noreferrer">
+                    <img src="Imagenes/Logos de redes sociales/X.svg" width="24" height="24" alt="Icono X" loading="lazy" />
+                </a>
+                <a href="https://www.instagram.com/yago.roberti/" aria-label="Perfil en Instagram" target="_blank" rel="noopener noreferrer">
+                    <img src="Imagenes/Logos de redes sociales/Instagram.svg" width="24" height="24" alt="Icono Instagram" loading="lazy" />
+                </a>
+                <a href="https://www.linkedin.com/feed/" aria-label="Perfil en LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <img src="Imagenes/Logos de redes sociales/linkedin.svg" width="24" height="24" alt="Icono LinkedIn" loading="lazy" />
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!---------------------------------------------------------------------------
+  HERO (VIDEO DE FONDO)  
+--------------------------------------------------------------------------->
+<header class="seccion-hero">
+    <div class="overlay-video"></div>
+    <video autoplay loop muted playsinline class="video-fondo">
+        <source src="Videos/Logo Animado.webm" type="video/webm">
+        <source src="Videos/Logo Animado.mp4" type="video/mp4">
+    </video>
+    <div class="hero-contenido">
+        <h1 class="hero-titulo">Yago Samir Roberti</h1>
+        <h3 class="hero-subtitulo">Estudiante técnico y futuro Ingeniero Electrónico en la Fuerza Aérea Argentina</h3>
+    </div>
+</header>
+
+<!---------------------------------------------------------------------------
+  LOGOS DE PROGRAMAS
+---------------------------------------------------------------------------> 
+<section class="seccion-logos">
+    <div class="contenedor grid-logos">
+        <img src="Imagenes/Logos de empresas para paginas Web/Fritzing.svg" class="logo-img" width="100" height="35" alt="Logo Fritzing" loading="lazy" />
+        <img src="Imagenes/Logos de empresas para paginas Web/Proteus.svg" class="logo-img" width="100" height="100" alt="Logo Proteus" loading="lazy" />
+        <img src="Imagenes/Logos de empresas para paginas Web/SolidWorks.svg" class="logo-img" width="100" height="35" alt="Logo SolidWorks" loading="lazy" />
+        <img src="Imagenes/Logos de empresas para paginas Web/Kicad.svg" class="logo-img" width="100" height="35" alt="Logo Kicad" loading="lazy" />
+    </div>
+</section>
+
+<!---------------------------------------------------------------------------
+  SECCIÓN SOBRE MÍ (ACTUALIZADA)
+---------------------------------------------------------------------------> 
+<section class="seccion-sobre-mi" id="sobre">
+    <div class="contenedor">
+        <div class="sobre-mi-grid">
+            <!-- Columna izquierda -->
+            <div class="sobre-mi-texto reveal">
+                <span class="label-seccion">SOBRE MÍ</span>
+                <h2 class="titulo-sobre-mi"></h2>
+                <p>Finalizando mi formación técnica en el IPET N.° 363, con experiencia práctica en electrónica y reparación de circuitos. Mi enfoque se centra en entender cada sistema desde sus fundamentos para construir soluciones precisas y confiables.</p>
+                <p>Me caracterizo por el compromiso, la responsabilidad y una orientación clara al aprendizaje continuo y la mejora constante.</p>
+
+                <div class="sobre-mi-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">01</div>
+                        <div>
+                            <h4>Formación Técnica</h4>
+                            <p>IPET N° 363 · Electrónica</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">02</div>
+                        <div>
+                            <h4>Futuro Ingeniero Electrónico</h4>
+                            <p>Fuerza Aérea Argentina</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">03</div>
+                        <div>
+                            <h4>Experiencia Práctica</h4>
+                            <p>Analisis y reparación de circuitos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Columna derecha -->
+            <div class="sobre-mi-habilidades reveal">
+                <div class="habilidad-block">
+                    <div class="habilidad-header">
+                        <h3>Diseño Electrónico</h3>
+                        <span class="habilidad-numero">ÁREA 01</span>
+                    </div>
+                    <div class="habilidad-tags">
+                        <span class="habilidad-tag">KiCad</span>
+                        <span class="habilidad-tag">SolidWorks Electrical</span>
+                    </div>
+                </div>
+                <div class="habilidad-block">
+                    <div class="habilidad-header">
+                        <h3>Simulación</h3>
+                        <span class="habilidad-numero">ÁREA 02</span>
+                    </div>
+                    <div class="habilidad-tags">
+                        <span class="habilidad-tag">Proteus</span>
+                        <span class="habilidad-tag">Fritzing</span>
+                        <span class="habilidad-tag">FEMM</span>
+                        <span class="habilidad-tag">LTspice</span>
+                    </div>
+                </div>
+                <div class="habilidad-block">
+                    <div class="habilidad-header">
+                        <h3>Modelado 3D</h3>
+                        <span class="habilidad-numero">ÁREA 03</span>
+                    </div>
+                    <div class="habilidad-tags">
+                        <span class="habilidad-tag">SolidWorks</span>
+                        <span class="habilidad-tag">KiCad</span>
+                    </div>
+                </div>
+                <div class="habilidad-block">
+                    <div class="habilidad-header">
+                        <h3>Productividad</h3>
+                        <span class="habilidad-numero">ÁREA 04</span>
+                    </div>
+                    <div class="habilidad-tags">
+                        <span class="habilidad-tag">Notion</span>
+                        <span class="habilidad-tag">Microsoft Office</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---------------------------------------------------------------------------
+  CONTACTO
+---------------------------------------------------------------------------> 
+<section class="seccion-contacto-index" id="contacto">
+    <div class="contenedor">
+        <div class="marco-diseno-contacto" id="contacto-cuadro">
+            <div class="grid-contacto-diseno">
+                
+                <div class="col-texto">
+                    <span class="label-seccion">CONTACTO</span>
+                    <h2 class="titulo-contacto-index">¿Tenemos algo<br>que <span class="resalte-azul">conversar?</span></h2>
+                    <p class="parrafo-contacto">
+                        Estoy abierto a nuevas oportunidades y colaboraciones. Si tienes un proyecto en mente o simplemente quieres conectar, no dudes en escribirme.
+                    </p>
+                </div>
+
+                <div class="col-info">
+                    <a href="https://wa.me/5493513258772" class="bloque-dato enlace-contacto" id="whatsapp-bloque">
+                        <span class="dato-etiqueta">WHATSAPP</span>
+                        <span class="dato-contenido">+54 9 351 325 8772</span>
+                    </a>
+                    
+                    <a href="mailto:yagoroberti64@gmail.com" class="bloque-dato enlace-contacto" id="email-bloque">
+                        <span class="dato-etiqueta">EMAIL</span>
+                        <span class="dato-contenido">yagoroberti64@gmail.com</span>
+                    </a>
+
+                    <div class="area-boton">
+                        <a href="contacto.html" class="boton-index-premium">
+                            <span class="texto-btn">ESCRIBIR MENSAJE</span>
+                            <span class="flecha-btn">→</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---------------------------------------------------------------------------
+  PIE DE PÁGINA - FOOTER 
+---------------------------------------------------------------------------->
+<footer class="pie-pagina" aria-label="Pie de página">
+    <div class="contenedor">
+        <div class="footer-top">
+            <div class="footer-info">
+                <div class="nav-brand">
+                    <img src="Imagenes/Logos Personales/Upsilon Original.svg" width="50" height="50" alt="Logo Yago Roberti" loading="lazy" />
+                    <div class="logo-texto">YAGO<br />ROBERTI</div>
+                </div>
+                <div class="eslogan">
+                    Diseñando el futuro de la electrónica con precisión y compromiso.
+                </div>
+            </div>
+
+            <nav class="footer-nav" aria-label="Enlaces de pie de página">
+                <a href="portafolio.html" class="link-pie">Portafolio</a>
+                <a href="sobre mi.html" class="link-pie">Sobre Mí</a>
+                <a href="contacto.html" class="link-pie">Contacto</a>
+            </nav>
+        </div>
+
+        <div class="footer-divider" aria-hidden="true"></div>
+
+        <div class="footer-bottom">
+            <a href="https://x.com/FosterCarton692" aria-label="Perfil en X (Twitter)" target="_blank" rel="noopener noreferrer">
+                <img src="Imagenes/Logos de redes sociales/X.svg" class="icono-red" width="24" height="24" alt="Icono X" loading="lazy" />
+            </a>
+            <a href="https://www.instagram.com/yago.roberti/" aria-label="Perfil en Instagram" target="_blank" rel="noopener noreferrer">
+                <img src="Imagenes/Logos de redes sociales/Instagram.svg" class="icono-red" width="24" height="24" alt="Icono Instagram" loading="lazy" />
+            </a>
+            <a href="https://www.linkedin.com/feed/" aria-label="Perfil en LinkedIn" target="_blank" rel="noopener noreferrer">
+                <img src="Imagenes/Logos de redes sociales/linkedin.svg" class="icono-red" width="24" height="24" alt="Icono LinkedIn" loading="lazy" />
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!------------------------
+  SCRIPT 
+-------------------------->
+<script>
+    // 1. Manejo del menú hamburguesa
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    if(menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('activo');
+            menuToggle.classList.toggle('abierto');
+            document.body.classList.toggle('no-scroll');
+        });
+    }
+
+    // 2. Animaciones de revelado para la sección "Sobre Mí"
+    const reveals = document.querySelectorAll('.reveal');
+    
+    if (reveals.length > 0) {
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { 
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        
+        reveals.forEach(el => revealObserver.observe(el));
+    }
+
+    // 3. Interactividad para elementos de la sección "Sobre Mí"
+    document.querySelectorAll('.habilidad-block').forEach(block => {
+        block.addEventListener('click', function() {
+            this.style.transform = 'translateY(-5px) scale(1.02)';
+            setTimeout(() => {
+                this.style.transform = 'translateY(-5px)';
+            }, 150);
+        });
+    });
+
+    // 4. Efecto hover mejorado para highlights
+    document.querySelectorAll('.highlight-item').forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            const icon = this.querySelector('.highlight-icon');
+            icon.style.backgroundColor = 'rgba(45, 107, 255, 0.1)';
+            icon.style.borderColor = 'var(--color-boton)';
+        });
+        
+        item.addEventListener('mouseleave', function() {
+            const icon = this.querySelector('.highlight-icon');
+            icon.style.backgroundColor = '';
+            icon.style.borderColor = 'rgba(45, 107, 255, 0.2)';
+        });
+    });
+
+    // 5. Scroll suave para enlaces internos
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+            
+            if (targetId === '#') return;
+            
+            const target = document.querySelector(targetId);
+            if (target) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: target.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+                
+                // Cerrar menú móvil si está abierto
+                if (navMenu.classList.contains('activo')) {
+                    navMenu.classList.remove('activo');
+                    menuToggle.classList.remove('abierto');
+                    document.body.classList.remove('no-scroll');
+                }
+            }
+        });
+    });
+
+    // 6. Animación de la línea azul con scroll
+    const contactoCuadro = document.getElementById('contacto-cuadro');
+    if (contactoCuadro) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    contactoCuadro.classList.add('linea-activa');
+                    observer.unobserve(contactoCuadro);
+                }
+            });
+        }, { threshold: 0.3 });
+        
+        observer.observe(contactoCuadro);
+    }
+
+    // 7. Prevenir comportamiento por defecto de enlaces internos en la misma página
+    document.querySelectorAll('a[href="#sobre"], a[href="#contacto"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            // El scroll suave ya se maneja arriba
+        });
+    });
+</script>
+</body>
+</html>

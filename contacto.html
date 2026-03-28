@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="utf-8">
+    <title>Yago Roberti - Contacto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Página de contacto de Yago Roberti - Diseñando el futuro de la electrónica con precisión y compromiso">
+    
+    <!-- Preconexión para fuentes de Google - Optimizado -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Hoja de estilos local -->
+    <link href="Diseño de pagina/diseño Contacto.css" rel="stylesheet">
+    
+    <!-- Favicon optimizado -->
+    <link href="Imagenes/Logos Personales/Upsilon-32x32.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+<!---------------------------------------------------------------------------
+  BARRA DE NAVEGACIÓN
+--------------------------------------------------------------------------- -->
+<nav class="navegacion" aria-label="Navegación principal">
+    <div class="contenedor nav-contenedor">
+        <a href="index.html" class="nav-brand">
+            <img src="Imagenes/Logos Personales/Upsilon Original.svg" width="40" height="40" alt="Logo Yago Roberti" loading="eager">
+            <div class="logo-texto">YAGO<br>ROBERTI</div>
+        </a>
+        
+        <div class="menu-hamburguesa" id="menu-toggle" aria-label="Abrir menú de navegación">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="nav-menu" id="nav-menu" role="navigation" aria-label="Menú principal">
+            <a href="index.html" class="nav-link" aria-current="page">Home</a>
+            <a href="portafolio.html" class="nav-link">Portafolio</a>
+            <a href="sobre mi.html" class="nav-link">Sobre Mí</a>
+            <a href="contacto.html" class="boton-contacto-destacado">Contáctame</a>
+
+            <div class="menu-socials" aria-label="Redes sociales">
+                <a href="https://x.com/FosterCarton692" aria-label="Perfil en X (Twitter)" target="_blank" rel="noopener noreferrer">
+                    <img src="Imagenes/Logos de redes sociales/X.svg" width="24" height="24" alt="Icono X" loading="lazy">
+                </a>
+                <a href="https://www.instagram.com/yago.roberti/" aria-label="Perfil en Instagram" target="_blank" rel="noopener noreferrer">
+                    <img src="Imagenes/Logos de redes sociales/Instagram.svg" width="24" height="24" alt="Icono Instagram" loading="lazy">
+                </a>
+                <a href="https://www.linkedin.com/feed/" aria-label="Perfil en LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <img src="Imagenes/Logos de redes sociales/linkedin.svg" width="24" height="24" alt="Icono LinkedIn" loading="lazy">
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!---------------------------------------------------------------------------
+  SECCIÓN HERO - ENCABEZADO PRINCIPAL
+--------------------------------------------------------------------------- -->
+<section class="seccion-hero" aria-labelledby="hero-title">
+    <div class="overlay-video" aria-hidden="true"></div>
+    <div class="hero-contenido">
+        <h1 id="hero-title" class="hero-titulo">Contáctame</h1>
+        <p class="hero-subtitulo">Hablemos sobre cómo puedo ayudarte a crecer.</p>
+    </div>
+</section>
+
+<!---------------------------------------------------------------------------
+  SECCIÓN PRINCIPAL DE CONTACTO
+--------------------------------------------------------------------------- -->
+<section class="seccion-contacto" aria-labelledby="contacto-title">
+    <div class="contenedor">
+        <div class="grid-dos-columnas">
+            
+<!---------------------------------------------------------------------------
+  INFORMACIÓN DE CONTACTO
+--------------------------------------------------------------------------- -->
+<div class="info-contacto">
+    <h2 id="contacto-title" class="titulo-seccion">Información de Contacto</h2>
+    <div class="datos-contacto">
+        
+        <!-- EMAIL - Cuadro completo cliqueable -->
+        <a href="mailto:yagoroberti64@gmail.com" class="item-contacto" data-contact-item aria-label="Enviar correo a yagoroberti64@gmail.com">
+            <img src="Imagenes/Iconos para la pagina/Carta-Contacto.svg" width="35" height="35" alt="Icono de correo electrónico" loading="lazy">
+            <div class="texto-contacto">
+                <span class="texto-contacto-grande">Email</span>
+                <span class="texto-contacto-chico">yagoroberti64@gmail.com</span>
+            </div>
+        </a>
+        
+        <!-- WHATSAPP - Cuadro completo cliqueable -->
+        <a href="https://wa.me/5493513258772" class="item-contacto" data-contact-item aria-label="Enviar mensaje por WhatsApp al +54 9 351 325 8772" target="_blank" rel="noopener noreferrer">
+            <img src="Imagenes/Iconos para la pagina/Whatsapp-Contacto.svg" width="35" height="35" alt="Icono de WhatsApp" loading="lazy">
+            <div class="texto-contacto">
+                <span class="texto-contacto-grande">WhatsApp</span>
+                <span class="texto-contacto-chico">+54 9 351 325 8772</span>
+            </div>
+        </a>
+        
+        <!-- TELÉFONO - Cuadro completo cliqueable -->
+        <a href="tel:+543513258772" class="item-contacto" data-contact-item aria-label="Llamar al teléfono +54 351 325 8772">
+            <img src="Imagenes/Iconos para la pagina/Telefono-Contacto.svg" width="35" height="35" alt="Icono de teléfono" loading="lazy">
+            <div class="texto-contacto">
+                <span class="texto-contacto-grande">Teléfono</span>
+                <span class="texto-contacto-chico">+54 351 325 8772</span>
+            </div>
+        </a>
+        
+    </div>
+</div>
+            <!---------------------------------------------------------------------------
+              FORMULARIO DE CONTACTO
+            --------------------------------------------------------------------------- -->
+            <div class="formulario-caja" data-form-box>
+                <form id="mi-formulario" novalidate>
+                    <div class="fila-doble">
+                        <input type="text" name="Nombre" placeholder="Nombre" required aria-label="Nombre">
+                        <input type="text" name="Apellido" placeholder="Apellido" required aria-label="Apellido">
+                    </div>
+                    <input type="email" name="Email" placeholder="Email" required aria-label="Correo electrónico">
+                    <input type="tel" name="Telefono" placeholder="Teléfono" required aria-label="Número de teléfono">
+                    <textarea name="Mensaje" placeholder="Tu mensaje..." required aria-label="Mensaje"></textarea>
+                    <button type="submit" class="boton-enviar" id="btn-submit">Enviar Mensaje</button>
+                    <div id="estado-formulario" role="alert" aria-live="polite"></div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!---------------------------------------------------------------------------
+  PIE DE PÁGINA - FOOTER
+--------------------------------------------------------------------------- -->
+<footer class="pie-pagina" aria-label="Pie de página">
+    <div class="contenedor">
+        <div class="footer-top">
+            <div class="footer-info">
+                <div class="nav-brand">
+                    <img src="Imagenes/Logos Personales/Upsilon Original.svg" width="50" height="50" alt="Logo Yago Roberti" loading="lazy">
+                    <div class="logo-texto">YAGO<br>ROBERTI</div>
+                </div>
+                <div class="eslogan">
+                    Diseñando el futuro de la electrónica con precisión y compromiso.
+                </div>
+            </div>
+
+            <nav class="footer-nav" aria-label="Enlaces de pie de página">
+                <a href="index.html" class="link-pie">Home</a>
+                <a href="portafolio.html" class="link-pie">Portafolio</a>
+                <a href="sobre mi.html" class="link-pie">Sobre Mí</a>
+                <a href="contacto.html" class="link-pie">Contacto</a>
+            </nav>
+        </div>
+
+        <div class="footer-divider" aria-hidden="true"></div>
+
+        <div class="footer-bottom">
+            <a href="https://x.com/FosterCarton692" aria-label="Perfil en X (Twitter)" target="_blank" rel="noopener noreferrer">
+                <img src="Imagenes/Logos de redes sociales/X.svg" class="icono-red" width="24" height="24" alt="Icono X" loading="lazy">
+            </a>
+            <a href="https://www.instagram.com/yago.roberti/" aria-label="Perfil en Instagram" target="_blank" rel="noopener noreferrer">
+                <img src="Imagenes/Logos de redes sociales/Instagram.svg" class="icono-red" width="24" height="24" alt="Icono Instagram" loading="lazy">
+            </a>
+            <a href="https://www.linkedin.com/feed/" aria-label="Perfil en LinkedIn" target="_blank" rel="noopener noreferrer">
+                <img src="Imagenes/Logos de redes sociales/linkedin.svg" class="icono-red" width="24" height="24" alt="Icono LinkedIn" loading="lazy">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!---------------------------------------------------------------------------
+  SCRIPTS DE FUNCIONALIDAD - OPTIMIZADO
+--------------------------------------------------------------------------- -->
+<script>
+// 1. Manejo del menú hamburguesa
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+if(menuToggle) {
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('activo');
+        menuToggle.classList.toggle('abierto');
+        document.body.classList.toggle('no-scroll');
+    });
+}
+
+// 2. Cuadro de texto que crece automáticamente
+const tx = document.querySelector('textarea[name="Mensaje"]');
+if(tx) {
+    tx.addEventListener('input', function() {
+        this.style.height = 'auto';
+        this.style.height = (this.scrollHeight) + 'px';
+    });
+}
+
+// 3. Envío del formulario asíncrono
+const form = document.getElementById('mi-formulario');
+if(form) {
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const btn = document.getElementById('btn-submit');
+        const estado = document.getElementById('estado-formulario');
+        
+        if(!form.checkValidity()) {
+            form.reportValidity();
+            return;
+        }
+        
+        estado.style.display = 'none';
+        estado.textContent = '';
+        btn.innerHTML = 'Enviando...';
+        btn.classList.add('cargando');
+        btn.disabled = true;
+        
+        const formData = new FormData(form);
+        
+        try {
+            const response = await fetch('https://formspree.io/f/mrebnyaj', {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            });
+            
+            const data = await response.json();
+            
+            if (response.ok && data.ok) {
+                estado.innerHTML = '¡Mensaje enviado! Te responderé pronto.';
+                estado.style.color = "#4CAF50";
+                estado.style.display = "block";
+                form.reset();
+                
+                if(tx) tx.style.height = 'auto';
+            } else {
+                throw new Error(data.error || 'Error en el servidor');
+            }
+        } catch (err) {
+            estado.innerHTML = 'Error al enviar. Por favor, inténtalo de nuevo.';
+            estado.style.color = "#ff4444";
+            estado.style.display = "block";
+        } finally {
+            btn.classList.remove('cargando');
+            btn.innerHTML = 'Enviar Mensaje';
+            btn.disabled = false;
+        }
+    });
+}
+
+// 4. Detectar scroll para activar animaciones
+if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animar-linea');
+            }
+        });
+    }, { threshold: 0.2 });
+    
+    const formBox = document.querySelector('[data-form-box]');
+    if (formBox) observer.observe(formBox);
+}
+</script>
+</body>
+</html>

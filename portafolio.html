@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="utf-8" />
+    <title>Yago Roberti - Portafolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="Diseño de pagina/diseño portafolio.css" rel="stylesheet" type="text/css" />
+    <link href="Imagenes/Logos Personales/Upsilon-32x32.png" rel="icon" type="image/x-icon" />
+</head>
+<body>
+<!---------------------------------------------------------------------------
+  BARRA DE NAVEGACIÓN PRINCIPAL
+---------------------------------------------------------------------------->
+<nav class="navegacion" aria-label="Navegación principal">
+    <div class="contenedor nav-contenedor">
+        <a href="index.html" class="nav-brand">
+            <img src="Imagenes/Logos Personales/Upsilon Original.svg" width="40" height="40" alt="Logo Yago Roberti" loading="eager" />
+            <div class="logo-texto">YAGO<br />ROBERTI</div>
+        </a>
+        <div class="menu-hamburguesa" id="menu-toggle" aria-label="Abrir menú de navegación">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-menu" id="nav-menu" role="navigation" aria-label="Menú principal">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="portafolio.html" class="nav-link">Portafolio</a>
+            <a href="sobre mi.html" class="nav-link">Sobre Mí</a>
+            <a href="contacto.html" class="boton-contacto-destacado">Contáctame</a>
+            <div class="menu-socials" aria-label="Redes sociales">
+                <a href="https://x.com/FosterCarton692" aria-label="Perfil en X (Twitter)" target="_blank" rel="noopener noreferrer">
+                    <img src="Imagenes/Logos de redes sociales/X.svg" width="24" height="24" alt="Icono X" loading="lazy" />
+                </a>
+                <a href="https://www.instagram.com/yago.roberti/" aria-label="Perfil en Instagram" target="_blank" rel="noopener noreferrer">
+                    <img src="Imagenes/Logos de redes sociales/Instagram.svg" width="24" height="24" alt="Icono Instagram" loading="lazy" />
+                </a>
+                <a href="https://www.linkedin.com/feed/" aria-label="Perfil en LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <img src="Imagenes/Logos de redes sociales/linkedin.svg" width="24" height="24" alt="Icono LinkedIn" loading="lazy" />
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+<!---------------------------------------------------------------------------
+  HERO   
+--------------------------------------------------------------------------->
+<header class="seccion-hero-portafolio">
+    <div class="contenedor">
+        <div class="hero-contenido-portafolio">
+            <h1 class="hero-titulo-portafolio">Mi Portafolio</h1>
+            <p class="hero-descripcion-portafolio">
+                Una colección de proyectos de electrónica y diseño donde aplico mis conocimientos técnicos 
+                y habilidades creativas para resolver problemas complejos.
+            </p>
+        </div>
+    </div>
+</header>
+<section class="seccion-filtros">
+    <div class="contenedor">
+        <div class="filtros-contenedor">
+            <span class="filtro-label">FILTRAR POR</span>
+            <div class="filtros-botones" id="filtros-botones">
+                <button class="filtro-btn activo" data-categoria="todos">Todos</button>
+                <button class="filtro-btn" data-categoria="electronica">Electrónica</button>
+                <button class="filtro-btn" data-categoria="programacion">Programación</button>
+                <button class="filtro-btn" data-categoria="diseno">Diseño</button>
+                <button class="filtro-btn" data-categoria="proyectos">Proyectos Escolares</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!---------------------------------------------------------------------------
+  PROYECTO DESTACADO  
+--------------------------------------------------------------------------->
+<section class="seccion-proyecto-destacado">
+    <div class="contenedor">
+        <div class="proyecto-destacado-card" id="destacado-card">
+            <div class="destacado-badge">DESTACADO</div>
+            <div class="destacado-contenido">
+                <div class="destacado-info">
+                    <span class="destacado-categoria">Electrónica </span>
+                    <h2 class="destacado-titulo">Cañón Gauss</h2>
+                    <p class="destacado-descripcion">
+                        También conocido como cañón de bobina o fusil de Gauss,
+                        es un tipo de cañón que usa una sucesión de electroimanes 
+                        para acelerar magnéticamente un proyectil a una gran velocidad 
+                        utilizando principios similares a los utilizados en los aceleradores de particulas.
+                    </p>
+                    <div class="destacado-tecnologias">
+                        <span class="tecnologia-tag">KiCad</span>
+                        <span class="tecnologia-tag">FEMM</span>
+                        <span class="tecnologia-tag">SolidWorks</span>
+                    </div>
+                    <div class="destacado-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">AÑO</span>
+                            <span class="meta-valor">2024</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">ESTADO</span>
+                            <span class="meta-valor proceso">En progreso</span>
+                        </div>
+                    </div>
+                    <div class="destacado-accion">
+                        <a href="proyecto-Gauss.html" class="destacado-enlace">
+                            <span class="texto-btn">VER DETALLES</span>
+                            <span class="flecha-btn">→</span>
+                        </a>
+                    </div>
+                </div>
+                <picture class="imagen-destacada">
+                    <source srcset="Imagenes/Imagenes-para-la-pagina/proyectos/gauss-web.webp" type="image/webp">
+                    <img src="Imagenes/Imagenes-para-la-pagina/proyectos/gauss.jpg" alt="Cañón Gauss" class="imagen-destacada">
+                </picture>           
+            </div>
+        </div>
+</section>
+<!---------------------------------------------------------------------------
+  DEMAS PROYECTOS
+--------------------------------------------------------------------------->
+<section class="seccion-proyectos-grid">
+    <div class="contenedor">
+        <div class="proyectos-header">
+            <h2 class="proyectos-titulo">Todos los Proyectos</h2>
+            <p class="proyectos-subtitulo">
+                Explora mis trabajos en diferentes áreas de la electrónica, programación y diseño.
+            </p>
+        </div>
+        <!-- Proyecto 1 -->
+        <div class="grid-proyectos" id="grid-proyectos">
+            <article class="proyecto-card" data-categorias="electronica diseno">
+                <div class="proyecto-header">
+                    <span class="proyecto-numero">01</span>
+                    <span class="proyecto-categoria">Electrónica</span>
+                </div>
+                <div class="proyecto-contenido">
+                    <h3 class="proyecto-titulo">Generador Marx</h3>
+                    <p class="proyecto-descripcion">
+                        Uilizando un convertidor flyback para generar alta tensión el 
+                        circuito eleva el voltaje hasta ionizar el aire entre dos electrodos divergentes, produciendo un arco 
+                        eléctrico ascendente que demuestra fenómenos de descarga, convección térmica y principios de electrónica de potencia.
+                    </p>
+                    <div class="proyecto-tecnologias">
+                        <span class="proyecto-tag">Kicad</span>
+                        <span class="proyecto-tag">FEMM</span>
+                    </div>
+                    <div class="proyecto-meta">
+                        <span class="proyecto-fecha">2025</span>
+                        <span class="proyecto-estado estado-progreso">EN PROGRESO</span>
+                        <a href="proyecto-marx.html" class="proyecto-enlace">Ver detalles →</a>
+                    </div>
+                </div>
+                    <picture class="proyecto-imagen">
+                        <source srcset="Imagenes/Imagenes-para-la-pagina/proyectos/flyback-web.webp" type="image/webp">
+                        <img src="Imagenes/Imagenes-para-la-pagina/proyectos/flyback.jpg" alt="Generador Marx" class="imagen-proyecto">
+                    </picture>
+            </article>
+            <!-- Proyecto 2 -->
+            <article class="proyecto-card" data-categorias="programacion">
+                <div class="proyecto-header">
+                    <span class="proyecto-numero">02</span>
+                    <span class="proyecto-categoria">Programación</span>
+                </div>
+                <div class="proyecto-contenido">
+                    <h3 class="proyecto-titulo">Proyecto #2</h3>
+                    <p class="proyecto-descripcion">
+                        Descripcion de proyecto
+                    </p>
+                    <div class="proyecto-tecnologias">
+                        <span class="proyecto-tag">Tag de proyecto #1</span>
+                        <span class="proyecto-tag">#2</span>
+                        <span class="proyecto-tag">#3</span>
+                    </div>
+                    <div class="proyecto-meta">
+                        <span class="proyecto-fecha">Año iniciado</span>
+                        <span class="proyecto-estado estado-progreso">En progreso</span>
+                        <a href="#" class="proyecto-enlace">Ver detalles →</a>
+                    </div>
+                </div>
+                    <picture class="proyecto-imagen">
+                        <source srcset="Imagenes/Imagenes-para-la-pagina/proyectos/sin-proyecto-1-web.webp" type="image/webp">
+                        <img src="Imagenes/Imagenes-para-la-pagina/proyectos/sin-proyecto-1.png" alt="Generador Marx" class="imagen-proyecto">
+                    </picture>
+            </article>
+            <!-- Proyecto 3 -->
+            <article class="proyecto-card" data-categorias="electronica proyectos">
+                <div class="proyecto-header">
+                    <span class="proyecto-numero">03</span>
+                    <span class="proyecto-categoria">Electrónica</span>
+                </div>
+                <div class="proyecto-contenido">
+                    <h3 class="proyecto-titulo">Proyecto #3</h3>
+                    <p class="proyecto-descripcion">
+                        Descripcion de proyecto
+                    </p>
+                    <div class="proyecto-tecnologias">
+                        <span class="proyecto-tag">Tag de proyecto #1</span>
+                        <span class="proyecto-tag">#2</span>
+                        <span class="proyecto-tag">#3</span>
+                    </div>
+                    <div class="proyecto-meta">
+                        <span class="proyecto-fecha">Año iniciado</span>
+                        <span class="proyecto-estado estado-pendiente">Pendiente</span>
+                        <a href="#" class="proyecto-enlace">Ver detalles →</a>
+                    </div>
+                </div>
+                    <picture class="proyecto-imagen">
+                        <source srcset="Imagenes/Imagenes-para-la-pagina/proyectos/sin-proyecto-1-web.webp" type="image/webp">
+                        <img src="Imagenes/Imagenes-para-la-pagina/proyectos/sin-proyecto-1.png" alt="Generador Marx" class="imagen-proyecto">
+                    </picture>
+            </article>
+        </div>
+    </div>
+</section>
+<!---------------------------------------------------------------------------
+  PIE DE PÁGINA - FOOTER   
+--------------------------------------------------------------------------->
+<footer class="pie-pagina" aria-label="Pie de página">
+    <div class="contenedor">
+        <div class="footer-top">
+            <div class="footer-info">
+                <div class="nav-brand">
+                    <img src="Imagenes/Logos Personales/Upsilon Original.svg" width="50" height="50" alt="Logo Yago Roberti" loading="lazy">
+                    <div class="logo-texto">YAGO<br>ROBERTI</div>
+                </div>
+                <div class="eslogan">
+                    Diseñando el futuro de la electrónica con precisión y compromiso.
+                </div>
+            </div>
+            <nav class="footer-nav" aria-label="Enlaces de pie de página">
+                <a href="index.html" class="link-pie">Home</a>
+                <a href="portafolio.html" class="link-pie">Portafolio</a>
+                <a href="sobre mi.html" class="link-pie">Sobre Mí</a>
+                <a href="contacto.html" class="link-pie">Contacto</a>
+            </nav>
+        </div>
+        <div class="footer-divider" aria-hidden="true"></div>
+        <div class="footer-bottom">
+            <a href="https://x.com/FosterCarton692" aria-label="Perfil en X (Twitter)" target="_blank" rel="noopener noreferrer">
+                <img src="Imagenes/Logos de redes sociales/X.svg" class="icono-red" width="24" height="24" alt="Icono X" loading="lazy">
+            </a>
+            <a href="https://www.instagram.com/yago.roberti/" aria-label="Perfil en Instagram" target="_blank" rel="noopener noreferrer">
+                <img src="Imagenes/Logos de redes sociales/Instagram.svg" class="icono-red" width="24" height="24" alt="Icono Instagram" loading="lazy">
+            </a>
+            <a href="https://www.linkedin.com/feed/" aria-label="Perfil en LinkedIn" target="_blank" rel="noopener noreferrer">
+                <img src="Imagenes/Logos de redes sociales/linkedin.svg" class="icono-red" width="24" height="24" alt="Icono LinkedIn" loading="lazy">
+            </a>
+        </div>
+    </div>
+</footer>
+<!---------------------------------------------------------------------------
+  SCRIPT
+--------------------------------------------------------------------------->
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    const body = document.body;
+    
+    if(menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('activo');
+            menuToggle.classList.toggle('abierto');
+            body.classList.toggle('no-scroll');
+        });
+        
+        document.querySelectorAll('.nav-link, .boton-contacto-destacado').forEach(n => n.addEventListener('click', () => {
+            navMenu.classList.remove('activo');
+            menuToggle.classList.remove('abierto');
+            body.classList.remove('no-scroll');
+        }));
+    }
+    
+    const filtroBtns = document.querySelectorAll('.filtro-btn');
+    const proyectoCards = document.querySelectorAll('.proyecto-card');
+    const proyectoDestacado = document.querySelector('.proyecto-destacado-card');
+    
+    function filtrarProyectos(categoria) {
+        proyectoCards.forEach(card => {
+            card.style.opacity = '0.3';
+            card.style.transform = 'translateY(10px)';
+        });
+        
+        setTimeout(() => {
+            proyectoCards.forEach(card => {
+                const categorias = card.getAttribute('data-categorias');
+                
+                if (categoria === 'todos' || categorias.includes(categoria)) {
+                    card.style.display = 'flex';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 50);
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }, 150);
+        
+        if (categoria === 'todos') {
+            proyectoDestacado.style.display = 'block';
+            setTimeout(() => {
+                proyectoDestacado.style.opacity = '1';
+            }, 50);
+        } else {
+            proyectoDestacado.style.opacity = '0.3';
+            setTimeout(() => {
+                proyectoDestacado.style.display = 'none';
+            }, 150);
+        }
+    }
+    
+    filtroBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filtroBtns.forEach(b => b.classList.remove('activo'));
+            btn.classList.add('activo');
+            const categoria = btn.getAttribute('data-categoria');
+            filtrarProyectos(categoria);
+            localStorage.setItem('filtro-portafolio', categoria);
+        });
+    });
+    
+    window.addEventListener('DOMContentLoaded', () => {
+        const filtroGuardado = localStorage.getItem('filtro-portafolio');
+        
+        if (filtroGuardado) {
+            const btnGuardado = document.querySelector(`.filtro-btn[data-categoria="${filtroGuardado}"]`);
+            if (btnGuardado) {
+                filtroBtns.forEach(b => b.classList.remove('activo'));
+                btnGuardado.classList.add('activo');
+                filtrarProyectos(filtroGuardado);
+            }
+        }
+        
+        proyectoCards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            
+            setTimeout(() => {
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, 100 + (index * 100));
+        });
+        
+        proyectoDestacado.style.opacity = '0';
+        proyectoDestacado.style.transform = 'translateY(20px)';
+        
+        setTimeout(() => {
+            proyectoDestacado.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            proyectoDestacado.style.opacity = '1';
+            proyectoDestacado.style.transform = 'translateY(0)';
+        }, 300);
+    });
+    
+    function esResponsive() {
+        return window.innerWidth <= 992;
+    }
+    
+    if (esResponsive()) {
+        const observerOptions = {
+            threshold: 0.3,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const hoverObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && esResponsive()) {
+                    entry.target.classList.add('scroll-hover');
+                } else {
+                    entry.target.classList.remove('scroll-hover');
+                }
+            });
+        }, observerOptions);
+        
+        proyectoCards.forEach(card => {
+            hoverObserver.observe(card);
+        });
+        
+        hoverObserver.observe(proyectoDestacado);
+        
+        window.addEventListener('resize', () => {
+            if (!esResponsive()) {
+                document.querySelectorAll('.proyecto-card, .proyecto-destacado-card').forEach(el => {
+                    el.classList.remove('scroll-hover');
+                });
+            }
+        });
+    }
+    
+    const scrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    });
+    
+    proyectoCards.forEach(card => {
+        scrollObserver.observe(card);
+    });
+    
+    scrollObserver.observe(proyectoDestacado);
+</script>   
+</body>
+</html>
